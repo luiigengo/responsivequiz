@@ -1,0 +1,164 @@
+:root {
+  --hue: hsl(248, 11%, 38%);
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+fieldset {
+  border: none;
+  width: 30rem;
+  margin: 1rem 0;
+  transition: 1s;
+}
+
+fieldset:hover {
+  transform: scale(1.5);
+}
+
+fieldset h1 {
+  max-width: 30rem;
+  justify-content: center;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background-color: black;
+}
+
+h1,
+input {
+  font-family: "Staatliches", cursive;
+}
+
+legend {
+  font-size: 22rem;
+  font-family: "Staatliches", cursive;
+  text-align: center;
+  animation-name: colors;
+  animation-duration: 10s;
+  color: var(--hue);
+  animation-iteration-count: infinite;
+  transition: all ease;
+  animation-direction: forwards;
+}
+
+button {
+  background-color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  padding: 3rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+p {
+  font-size: 5rem;
+  text-align: center;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 6rem;
+  align-items: center;
+}
+
+.check-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+}
+
+.final-legend {
+  background-color: rgb(230, 50, 70);
+  color: white;
+  font-size: 20rem;
+  width: 100%;
+  padding-bottom: 50rem;
+}
+
+.green {
+  background-color: rgb(86, 235, 86);
+}
+
+.red {
+  background-color: red;
+}
+
+.white {
+  background-color: white;
+}
+
+.font-white {
+  color: white;
+}
+
+@keyframes colors {
+  0% {
+    --hue: hsl(100, 30%, 90%);
+  }
+
+  10% {
+    --hue: hsl(200, 40%, 70%);
+  }
+
+  20% {
+    --hue: hsl(100, 30%, 80%);
+  }
+
+  30% {
+    --hue: hsl(120, 60%, 60%);
+  }
+
+  40% {
+    --hue: hsl(900, 40%, 50%);
+  }
+
+  50% {
+    --hue: hsl(80, 50%, 60%);
+  }
+
+  60% {
+    --hue: hsl(250, 50%, 70%);
+  }
+
+  70% {
+    --hue: hsl(200, 90%, 60%);
+  }
+
+  80% {
+    --hue: hsl(80, 80%, 80%);
+  }
+
+  90% {
+    --hue: hsl(90, 90%, 90%);
+  }
+
+  100% {
+    --hue: hsl(50%, 100%, 100%);
+  }
+}
