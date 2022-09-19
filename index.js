@@ -35,8 +35,8 @@ const questions = [
 
 let randomNumber = Math.floor(Math.random() * (questions.length + 1));
 
-let container = document.querySelector(".container");
-let form = document.querySelector("form");
+const container = document.querySelector(".container");
+const form = document.querySelector("form");
 
 let score = 0;
 let finalScore = document.createElement("legend");
@@ -45,18 +45,18 @@ finalScore.innerText = `Your Score is ${score}`;
 form.append(finalScore);
 
 for (let i = 0; i < questions.length; i++) {
-  let fieldset = document.createElement("fieldset");
+  const fieldset = document.createElement("fieldset");
 
-  let h1 = document.createElement("h1");
+  const h1 = document.createElement("h1");
   h1.innerText = `${questions[i].question}`;
 
-  let wrapperDiv = document.createElement("div");
+  const wrapperDiv = document.createElement("div");
   wrapperDiv.classList.add("check-wrapper");
 
-  let input = document.createElement("input");
+  const input = document.createElement("input");
   input.classList.add(`input${i}`);
 
-  let button = document.createElement("button");
+  const button = document.createElement("button");
   button.innerText = "SUBMIT";
 
   wrapperDiv.append(input);
